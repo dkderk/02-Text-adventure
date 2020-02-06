@@ -1,0 +1,201 @@
+{
+	"WROOM": {
+		"name": "White Room",
+		"kind": "ROOM",
+		"desc": "Four blank white walls and an empty ceiling and floor surround you",
+		"exits": [{
+			"exit": "SLEEP",
+			"target": "SROOM"
+		}, {
+			"exit": "SIT",
+			"target": "SROOM"
+		}, {
+			"exit": "LAY DOWN",
+			"target": "SROOM"
+		}]
+	},
+	"SROOM": {
+		"name": "Cavern",
+		"kind": "ROOM",
+		"desc": "After falling asleep in the White Room you awaken on a dark floor surrounded by darkness",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "NCAV"
+		}, {
+			"exit": "EAST",
+			"target": "ECAV"
+		}, {
+			"exit": "SOUTH",
+			"target": "SCAV"
+		}, {
+			"exit": "WEST",
+			"target": "WCAV"
+		}]
+	},
+	"NCAV": {
+		"name": "Pit",
+		"kind": "",
+		"desc": "You've approached a massive pit in the ground of the cavern. You can't see the bottom.",
+		"exits": [{
+			"exit": "SOUTH",
+			"target": "SROOM"
+		}, {
+			"exit": "JUMP",
+			"target": "BPIT"
+		}]
+	},
+	"ECAV": {
+		"name": "Cavern",
+		"kind": "ROOM",
+		"desc": "More Cavern... It has formed into a pathway leading East",
+		"exits": [{
+			"exit": "EAST",
+			"target": "LPOOL"
+		}, {
+			"exit": "WEST",
+			"target": "SROOM"
+		}]
+	},
+	"SCAV": {
+		"name": "Cavern",
+		"kind": "ROOM",
+		"desc": "Walking south leads to more cavern...",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "SROOM"
+		}, {
+			"exit": "EAST",
+			"target": "EROOM"
+		}, {
+			"exit": "SOUTH",
+			"target": "BCAV"
+		}, {
+			"exit": "WEST",
+			"target": "SPCAV"
+		}]
+	},
+	"WCAV": {
+		"name": "Cavern",
+		"kind": "ROOM",
+		"desc": "The walls in this cave glow a deep red. There is a staircase leading up at the far west end of the cavern and one going down to the south.",
+		"exits": [{
+			"exit": "UP",
+			"target": "END4"
+		}, {
+			"exit": "DOWN",
+			"target": "END5"
+		}, {
+			"exit": "EAST",
+			"target": "SROOM"
+		}]
+	},
+	"BPIT": {
+		"name": "Water Pool",
+		"kind": "ROOM",
+		"desc": "You have landed in a pool of water. Slick stone surrounds you on all sides leaving no way out.",
+		"exits": [{
+			"exit": "DROWN",
+			"target": "END"
+		}]
+	},
+	"END": {
+		"name": "White Room",
+		"kind": "ROOM",
+		"desc": "You awaken in the White Room once again. It appears you'll be stuck here forever.",
+		"exits": [{
+			"exit": "SLEEP",
+			"target": "SROOM"
+		}, {
+			"exit": "SIT",
+			"target": "SROOM"
+		}, {
+			"exit": "LAY DOWN",
+			"target": "SROOM"
+		}]
+	},
+	"LPOOL": {
+		"name": "Lava Pool",
+		"kind": "ROOM",
+		"desc": "Rocks crumble behind you as you enter a room filled with lava. Your way out is blocked.",
+		"exits": [{
+			"exit": "BURN",
+			"target": "END"
+		}]
+	},
+	"EROOM": {
+		"name": "Empty Room",
+		"kind": "ROOM",
+		"desc": "There appears to be nothing in here...",
+		"exits": [{
+			"exit": "WEST",
+			"target": "SCAV"
+		}]
+	},
+	"BCAV": {
+		"name": "Cavern",
+		"kind": "ROOM",
+		"desc": "Agh! You get swarmed by bats and carried away",
+		"exits": [{
+			"exit": "FIGHT",
+			"target": "END3"
+		}]
+	},
+	"SPCAV": {
+		"name": "Speleothem Cavern",
+		"kind": "ROOM",
+		"desc": "You walk into a room filled with speleothems. ",
+		"exits": [{
+			"exit": "EAST",
+			"target": "END2"
+		}]
+	},
+	"END2": {
+		"name": "White Room",
+		"kind": "ROOM",
+		"desc": "You sit up quickly as a stalactite thrusts through you. You're in the White Room again. It appears you'll be stuck here forever.",
+		"exits": [{
+			"exit": "SLEEP",
+			"target": "SROOM"
+		}, {
+			"exit": "SIT",
+			"target": "SROOM"
+		}, {
+			"exit": "LAY DOWN",
+			"target": "SROOM"
+		}]
+	},
+	"END3": {
+		"name": "White Room",
+		"kind": "ROOM",
+		"desc": "You awaken in the White Room once again after being dropped from the top of the cavern by the bats. It appears you'll be stuck here forever.",
+		"exits": [{
+			"exit": "SLEEP",
+			"target": "SROOM"
+		}, {
+			"exit": "SIT",
+			"target": "SROOM"
+		}, {
+			"exit": "LAY DOWN",
+			"target": "SROOM"
+		}]
+	},"END4": {
+		"name": "White Room",
+		"kind": "ROOM",
+		"desc": "After walking for hours you awaken in the White Room once again. It appears you'll be stuck here forever.",
+		"exits": [{
+			"exit": "SLEEP",
+			"target": "SROOM"
+		}, {
+			"exit": "SIT",
+			"target": "SROOM"
+		}, {
+			"exit": "LAY DOWN",
+			"target": "SROOM"
+		}]
+	},"END5": {
+		"name": "Hell",
+		"kind": "ROOM",
+		"desc": "You are greeted as you walk down the stairs into the entrance to Hell.",
+		"exits": []
+	}
+}
